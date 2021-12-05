@@ -8,7 +8,7 @@ const getDetections = async (canvas) => {
     return faceapi.resizeResults(detections, matchDimensions(canvas));
 };
 const drawAll = ({ canvas, detections }) => {
-    faceapi.draw.drawDetections(canvas, detections)
+    //faceapi.draw.drawDetections(canvas, detections)
     faceapi.draw.drawFaceLandmarks(canvas, detections)
     faceapi.draw.drawFaceExpressions(canvas, detections)
 }
